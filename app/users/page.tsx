@@ -6,12 +6,14 @@ interface User {
 }
 
 const UsersPage = async () => {
-  const res = await fetch('http://jsonplaceholder.typicode.com/users')
+  const res = await fetch('http://jsonplaceholder.typicode.com/users', { cache: 'no-store' })
   const users: User[] = await res.json()
   // run 'npm run build'
   // run 'npm start' to run the version built for production
   // then observe what happens to the time when a client refreshs...
-  // 38.49
+  //!
+  // add an object to disable caching and then build the app again
+  // run it and observe the behaviour at refresh
   return (
     <>
       <h1>Users</h1>
