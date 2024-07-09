@@ -6,7 +6,7 @@ interface User {
 }
 
 const UsersPage = async () => {
-  const res = await fetch('http://jsonplaceholder.typicode.com/users', { cache: 'no-store' })
+  const res = await fetch('http://jsonplaceholder.typicode.com/users')
   const users: User[] = await res.json()
   // run 'npm run build'
   // run 'npm start' to run the version built for production
