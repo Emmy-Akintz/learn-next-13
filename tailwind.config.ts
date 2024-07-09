@@ -19,3 +19,4 @@ const config: Config = {
 }
 export default config
 // npm i -D daisyui@latest
+// 55.40
