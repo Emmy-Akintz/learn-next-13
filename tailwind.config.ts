@@ -18,5 +18,4 @@ const config: Config = {
   plugins: [],
 }
 export default config
-// npm i -D daisyui@latest
 // 55.40
